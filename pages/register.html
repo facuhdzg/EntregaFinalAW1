@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda\Registrarse</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>       
+        <div>
+            <!-- logo de la web -->
+            <img src="" alt="Logo">
+
+            <!-- inicia sesion y agrega al carrito -->
+            <ul>
+                <li>
+                    <a href="login.html">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a href="./Carrito.html"> Carrito</a>
+                </li>
+            </ul>
+        </div>        
+
+         <!-- Barra  categorias -->
+        <Nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="./Zapatillas.html">Zapatillas</a>
+                </li>
+                <li>
+                    <a href="./Indumentaria.html">Indumentaria</a>
+                </li>
+                <li>
+                    <a href="./Accesorios.html">Accesorios</a>
+                </li>           
+            </ul>
+        </Nav>
+    </header>
+    <!-- Cuerpo -->
+    <body>
+        <div>
+            <h2>Registrarse</h2>
+            <form action="post">
+                <label for="txtNombre"><b>Nombre</b></label>
+                <br>
+                <input type="text"id="txtNombre" name="" class="" placeholder="Nombre..." required>
+                <br><br>
+
+                <label for="txtApellido"><b>Apellido</b></label>
+                <br>
+                <input type="text" id="txtApellido" name="" class="" placeholder="Apellido..." required>
+                <br><br>
+
+                <label for="txtFecha"><b>Fecha de nacimiento</b></label>
+                <br>
+                <input type="date" id="txtFecha" name="" class="" required>
+                <br><br>   
+
+                <label for="txtEmail"><b>Email</b></label>
+                <br>                
+                <input type="email" id="txtEmail" name="" class="" placeholder="Ejemplo@gmail.com" required>
+                <br><br>
+
+                <label for="txtClave"><b>Contraseña</b></label>
+                <br>
+                <input type="password" id="txtClave" name="" class="" placeholder="Ingrese su clave..." required>
+                <br><br>
+                                
+                <button type="submit">Registrarme</button>
+            </form>
+        </div>
+        <br><br>
+    </body>
+    <!-- Pie de pagina -->
+    <footer>
+        Copyright 2024 Herlein Facundo
+    </footer>
+</body>
+</html>
