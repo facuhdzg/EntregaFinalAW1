@@ -1,0 +1,27 @@
+//FOOTER DE LA WEB
+.pie{
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding:1rem;
+    padding-left: 5rem;
+    background-color: gray;
+    .icon{
+        font-size: 1.5rem;
+        color:#ffffff;
+        background-color: gray;       
+        a{                  
+            text-decoration: none;
+            color:white;
+            i{
+                background-color: #808080;
+            }
+        }
+    }
+    .wpp ,.insta,.facebook {           
+        margin-left: 3rem;
+    }
+    .derechos{        
+        margin-left: 20rem;
+    }
+}

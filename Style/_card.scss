@@ -1,0 +1,110 @@
+@function hoverColor($color, $percent){
+    @return saturate($color,$percent);
+}
+
+//mixins
+@mixin customButton($width,$heigth,$borderRadius,$bg,$percent){
+    width: $width;
+    height: $heigth;
+    border-radius: $borderRadius;
+    border: 0px;
+    cursor: pointer;
+    background-color: $bg;
+    a:hover{
+        background-color: hoverColor($bg,$percent);
+        transition: all ease-in-out 0.3;
+    }
+}
+//Formato de las cartas
+.card{
+    max-width: 380px;
+    padding:2rem;
+    background-color: gray;
+    border-radius: 20px;
+    box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);
+    h3{
+        background-color: gray;
+    }
+    img{
+        width:100%;        
+    }
+
+    .desc{  
+        margin-top: 2rem;      
+        font-size: smaller;
+        p{
+            background-color: gray;
+        }        
+    }
+
+    .card-footer{
+        background-color: gray;
+        display:flex;
+        margin-top: 2rem;
+        justify-content: space-around;
+        .price{
+            background-color: gray
+        }
+        .btn-quit{
+            @include customButton(30px,30px,100%,$color-red,20%);
+        }
+        .cant{
+            background-color: gray;
+        }
+        .btn-add{
+            @include customButton(30px,30px,100%,$color-green,20%);
+        }
+    }
+}
+  
+.card-cart{
+    grid-area: "producto";
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 6rem;
+    max-width: 95%;    
+    background-color: gray;
+    border-radius: 20px;
+    box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);    
+    margin-left: 2%;
+    h3{
+        background-color: gray;
+    }
+    img{
+        width:5.3rem;        
+        border-radius: 1rem;        
+    }
+
+    .desc{
+        max-width: 50%;                   
+        font-size: medium;
+        background-color: gray;        
+        p{           
+            background-color: gray;
+        }        
+    }
+
+    .card-footer{        
+        width: 15rem;
+        background-color: gray;
+        display:flex;        
+        justify-content: space-around;
+        align-items: center;        
+        .price{
+            background-color: gray;
+            font-size: 1.5rem;
+            margin:1rem;
+        }
+        .btn-quit{
+            @include customButton(30px,30px,100%,$color-red,20%);
+        }
+        .cant{
+            background-color: gray;
+        }
+        .btn-add{
+            @include customButton(30px,30px,100%,$color-green,20%);
+        }
+    }
+}
+

@@ -1,0 +1,408 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+.head .panel {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.head .panel .pan-links {
+  background-color: black;
+  display: flex;
+  list-style: none;
+  padding-right: 3rem;
+}
+.head .panel .pan-links .pan-item {
+  background-color: black;
+  align-content: center;
+  padding-right: 2rem;
+}
+.head .panel .pan-links .pan-item a {
+  background-color: black;
+  color: aqua;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.head .panel .pan-links .pan-item a i {
+  background-color: black;
+}
+.head .panel .pan-links .pan-item:hover {
+  text-shadow: -3px 3px 2px gray;
+}
+.head .navbar {
+  display: flex;
+  padding-left: 1rem;
+  background-color: rgb(156, 146, 146);
+}
+.head .navbar img {
+  width: 80px;
+  height: 80px;
+  margin: 0.4rem;
+  border-radius: 1.5rem;
+}
+.head .navbar .nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 23rem;
+  background-color: rgb(156, 146, 146);
+}
+.head .navbar .nav-links .nav-item {
+  background-color: rgb(156, 146, 146);
+  cursor: pointer;
+  margin-right: 5rem;
+}
+.head .navbar .nav-links .nav-item a {
+  background-color: rgb(156, 146, 146);
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.head .navbar .nav-links .nav-item:hover {
+  text-shadow: -3px 3px 2px black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 5rem;
+  grid-auto-flow: column wrap;
+  margin: 3rem;
+}
+
+.container-cart {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: " producto compra" " producto  compra";
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+  margin-top: 1rem;
+}
+.container-cart .total {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
+  background-color: gray;
+  grid-area: compra;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.container-cart .total h2 {
+  padding: 2rem;
+  background-color: gray;
+}
+.container-cart .total .item {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  width: 50%;
+}
+.container-cart .total .item p {
+  background-color: gray;
+  font-size: 1.1rem;
+}
+.container-cart .total .item h3 {
+  background-color: gray;
+  font-size: 1.8rem;
+}
+.container-cart .total button {
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: blue;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 3.5px 3px 12px black;
+}
+
+.card {
+  max-width: 380px;
+  padding: 2rem;
+  background-color: gray;
+  border-radius: 20px;
+  box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
+}
+.card h3 {
+  background-color: gray;
+}
+.card img {
+  width: 100%;
+}
+.card .desc {
+  margin-top: 2rem;
+  font-size: smaller;
+}
+.card .desc p {
+  background-color: gray;
+}
+.card .card-footer {
+  background-color: gray;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.card .card-footer .price {
+  background-color: gray;
+}
+.card .card-footer .btn-quit {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #c45353;
+}
+.card .card-footer .btn-quit a:hover {
+  background-color: #db3c3c;
+  transition: all ease-in-out 0.3;
+}
+.card .card-footer .cant {
+  background-color: gray;
+}
+.card .card-footer .btn-add {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #20a842;
+}
+.card .card-footer .btn-add a:hover {
+  background-color: #0cbc38;
+  transition: all ease-in-out 0.3;
+}
+
+.card-cart {
+  grid-area: "producto";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 6rem;
+  max-width: 95%;
+  background-color: gray;
+  border-radius: 20px;
+  box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
+  margin-left: 2%;
+}
+.card-cart h3 {
+  background-color: gray;
+}
+.card-cart img {
+  width: 5.3rem;
+  border-radius: 1rem;
+}
+.card-cart .desc {
+  max-width: 50%;
+  font-size: medium;
+  background-color: gray;
+}
+.card-cart .desc p {
+  background-color: gray;
+}
+.card-cart .card-footer {
+  width: 15rem;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-cart .card-footer .price {
+  background-color: gray;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.card-cart .card-footer .btn-quit {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #c45353;
+}
+.card-cart .card-footer .btn-quit a:hover {
+  background-color: #db3c3c;
+  transition: all ease-in-out 0.3;
+}
+.card-cart .card-footer .cant {
+  background-color: gray;
+}
+.card-cart .card-footer .btn-add {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #20a842;
+}
+.card-cart .card-footer .btn-add a:hover {
+  background-color: #0cbc38;
+  transition: all ease-in-out 0.3;
+}
+
+.cont-login {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 5rem;
+}
+.cont-login .login h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.cont-login .login .form-login {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 1.5rem;
+}
+.cont-login .login .form-login label {
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+.cont-login .login .form-login input {
+  margin-bottom: 2.5rem;
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  border-style: initial;
+  background-color: aliceblue;
+  text-indent: 1.2rem;
+  font-size: 1rem;
+}
+.cont-login .login .form-login button {
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: blue;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 3.5px 3px 12px black;
+}
+.cont-login .link-register {
+  height: 15rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 1rem;
+  border-style: solid;
+  border-radius: 2rem;
+}
+.cont-login .link-register p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+.cont-login .link-register button {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 3rem;
+  background-color: gainsboro;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 3.5px 3px 12px black;
+}
+.cont-login .link-register button a {
+  font-size: 1.2rem;
+  color: red;
+  background-color: gainsboro;
+  text-decoration: none;
+}
+
+.cont-register {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 5rem;
+}
+.cont-register .register h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.cont-register .register .form-register {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 1.5rem;
+}
+.cont-register .register .form-register label {
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+.cont-register .register .form-register input {
+  margin-bottom: 2.5rem;
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  border-style: initial;
+  background-color: aliceblue;
+  text-indent: 1.2rem;
+  font-size: 1rem;
+}
+.cont-register .register .form-register button {
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: blue;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 3.5px 3px 12px black;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  padding-left: 5rem;
+  background-color: gray;
+}
+.pie .icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: gray;
+}
+.pie .icon a {
+  text-decoration: none;
+  color: white;
+}
+.pie .icon a i {
+  background-color: #808080;
+}
+.pie .wpp, .pie .insta, .pie .facebook {
+  margin-left: 3rem;
+}
+.pie .derechos {
+  margin-left: 20rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

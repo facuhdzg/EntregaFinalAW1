@@ -1,0 +1,58 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    gap:5rem;
+    grid-auto-flow: column wrap;
+    margin: 3rem;
+}
+.container-cart{
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    " producto compra"
+    " producto  compra";
+    grid-column-gap: 0px;
+    grid-row-gap:1rem;
+    margin-top: 1rem;
+    .total{    
+        display: flex;
+        border-radius: 20px;
+        box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37); 
+        background-color: gray;
+        grid-area: compra;      
+        align-items: center;
+        flex-direction: column;
+        margin-right: 1rem;        
+        h2{
+            padding: 2rem;
+            background-color: gray;
+        }        
+        .item{
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            width: 50%;
+            p{
+                background-color: gray;
+                font-size: 1.1rem;
+            }
+            h3{
+                background-color: gray;
+                font-size: 1.8rem;
+            }
+        }
+        button{
+            margin:2rem;                
+            font-size: 1.2rem;
+            color: white;
+            width: 15rem;
+            height: 2.5rem;
+            background-color: blue;
+            border-radius: 0.5rem;
+            border: none;
+            box-shadow: 3.5px 3px 12px black;
+        }
+    }  
+}
