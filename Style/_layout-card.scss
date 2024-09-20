@@ -4,55 +4,76 @@
     gap:5rem;
     grid-auto-flow: column wrap;
     margin: 3rem;
+    margin-top: 9rem;
 }
 .container-cart{
     display: grid;
-    grid-template-columns: 3fr 1.2fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    " producto compra"
-    " producto  compra";
-    grid-column-gap: 0px;
-    grid-row-gap:1rem;
-    margin-top: 1rem;
-    .total{    
-        display: flex;
-        border-radius: 20px;
-        box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37); 
-        background-color: gray;
-        grid-area: compra;      
-        align-items: center;
-        flex-direction: column;
-        margin-right: 1rem;        
-        h2{
-            padding: 2rem;
-            background-color: gray;
-        }        
-        .item{
-            background-color: gray;
+    grid-template-columns: 3fr 1.2fr;  
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+    .cont-cart{
+        display:grid;
+        grid-column: 1;        
+        grid-row-gap: 1.5rem;
+    }
+    .container-total{
+        display: grid;
+        grid-column: 2;
+        .total{    
             display: flex;
-            justify-content: space-between;
-            margin: 0.5rem 0;
-            width: 50%;
-            p{
-                background-color: gray;
-                font-size: 1.1rem;
+            border-radius: 15px;
+            box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37); 
+            background-color: darkturquoise;                  
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 30rem;
+            margin-right: 1rem;
+            position: sticky;
+            border:solid 2px;
+            top: 8rem;                          
+            h2{
+                padding: 1rem;
+                background-color: darkturquoise; 
+                border-bottom: solid ;
+            }        
+            .item{                
+                background-color: darkturquoise;
+                display: flex;
+                justify-content: space-between;
+                margin: 0.5rem 0;
+                width: 50%;
+                p{
+                    background-color: darkturquoise;
+                    font-size: 1.1rem;
+                }
+                h3{
+                    background-color: darkturquoise;
+                    font-size: 1.8rem;                    
+                }                
             }
-            h3{
-                background-color: gray;
-                font-size: 1.8rem;
+            .item.p-total{
+                border-top: solid ;
             }
+            button{
+                margin:2rem;                
+                font-size: 1.4rem;
+                color: Black;
+                width: 15rem;
+                height: 2.5rem;
+                background-color: white;
+                border-radius: 0.5rem;
+                border: none;
+                box-shadow: 3.5px 3px 12px black;
+                transition: 0.4s ease-in-out;
+            }
+            button:hover{
+                background-color: rgba(0, 199, 0, 0.932);
+                text-shadow: -3px 2px 4px black;
+                color:white;
+                height: 2.65rem;
+            }           
         }
-        button{
-            margin:2rem;                
-            font-size: 1.2rem;
-            color: white;
-            width: 15rem;
-            height: 2.5rem;
-            background-color: blue;
-            border-radius: 0.5rem;
-            border: none;
-            box-shadow: 3.5px 3px 12px black;
-        }
-    }  
+    }
+      
 }

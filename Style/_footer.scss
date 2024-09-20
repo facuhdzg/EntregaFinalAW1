@@ -5,16 +5,28 @@
     flex-wrap: nowrap;
     padding:1rem;
     padding-left: 5rem;
-    background-color: gray;
+    background-color: $color-bg-footer;
     .icon{
         font-size: 1.5rem;
         color:#ffffff;
-        background-color: gray;       
+        background-color: $color-bg-footer;  
+             
         a{                  
             text-decoration: none;
             color:white;
             i{
-                background-color: #808080;
+                transition: 0.5s ease-in-out;
+                background-color: $color-bg-footer;
+            }            
+        }        
+    }
+    .icon:hover{       
+        a{
+           
+            i{
+                text-shadow: -7px 2px 3px rgb(255, 255, 255);
+                color:white ;
+                font-size: 1.55rem;                              
             }
         }
     }
@@ -22,6 +34,6 @@
         margin-left: 3rem;
     }
     .derechos{        
-        margin-left: 20rem;
+        margin-left: 7rem;
     }
 }

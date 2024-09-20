@@ -1,75 +1,105 @@
-@function hoverColor($color, $percent){
-    @return saturate($color,$percent);
-}
-
 //mixins
-@mixin customButton($width,$heigth,$borderRadius,$bg,$percent){
+@mixin customButton($width,$heigth,$borderRadius,$bg){
     width: $width;
     height: $heigth;
     border-radius: $borderRadius;
     border: 0px;
     cursor: pointer;
-    background-color: $bg;
-    a:hover{
-        background-color: hoverColor($bg,$percent);
-        transition: all ease-in-out 0.3;
-    }
+    background-color: $bg;    
 }
 //Formato de las cartas
 .card{
+    transition:0.5s ease-in-out;
     max-width: 380px;
+    max-height: 640px;
     padding:2rem;
-    background-color: gray;
+    margin-top: 3rem;
+    background-color: $color-bg-card;
     border-radius: 20px;
     box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);
     h3{
-        background-color: gray;
+        background-color: $color-bg-card;
     }
     img{
-        width:100%;        
+        width:100%;       
+        transition:0.3s ease-in-out;
     }
 
     .desc{  
         margin-top: 2rem;      
         font-size: smaller;
+        background-color: $color-bg-card;        
         p{
-            background-color: gray;
+            background-color: $color-bg-card;
         }        
     }
 
     .card-footer{
-        background-color: gray;
+        background-color: $color-bg-card;
         display:flex;
         margin-top: 2rem;
         justify-content: space-around;
         .price{
-            background-color: gray
+            background-color: $color-bg-card;
         }
         .btn-quit{
-            @include customButton(30px,30px,100%,$color-red,20%);
+            @include customButton(31px,31px,18%,$color-btn-card);
+            transition: 0.5s ease-in-out;
+            i{
+                font-size: xx-large;
+                background-color: transparent;
+                line-height: 29px; 
+            }
+        }
+        .btn-quit:hover{
+            background-color: rgba(236, 17, 17, 0.945);           
+            i{
+                text-shadow: -3px 2px 4px black;
+            }
         }
         .cant{
-            background-color: gray;
+            background-color: $color-bg-card;
         }
         .btn-add{
-            @include customButton(30px,30px,100%,$color-green,20%);
+            @include customButton(31px,31px,18%,$color-btn-card);
+            transition: 0.5s ease-in-out;
+            i{
+                font-size: xx-large;
+                background-color: transparent;
+                line-height: 29px;
+            }
+        }
+        .btn-add:hover{
+            background-color: rgba(0, 199, 0, 0.932);
+            i{
+                text-shadow: -3px 2px 4px black;
+            }
         }
     }
 }
-  
-.card-cart{
-    grid-area: "producto";
+.card:hover{    
+    img{
+        border-radius: 2%;
+        box-shadow: 0px 0px 15px 4.5px ;       
+    }
+    .desc{
+        font-weight: 500;        
+    }
+}
+//Card del carrito
+.card-cart{    
     display:flex;
     justify-content: space-around;
     align-items: center;
     max-height: 6rem;
     max-width: 95%;    
-    background-color: gray;
-    border-radius: 20px;
+    background-color: $color-bg-Ccart;
+    border-radius: 10px;
     box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);    
     margin-left: 2%;
+    border:solid 2px darkturquoise;
     h3{
-        background-color: gray;
+        background-color: $color-bg-Ccart;
     }
     img{
         width:5.3rem;        
@@ -79,31 +109,61 @@
     .desc{
         max-width: 50%;                   
         font-size: medium;
-        background-color: gray;        
+        background-color: $color-bg-Ccart;   
+        border-left:solid 2px;     
+        padding-left: 2rem;
         p{           
-            background-color: gray;
+            background-color: $color-bg-Ccart;
+            margin-bottom: 0;
         }        
     }
 
     .card-footer{        
         width: 15rem;
-        background-color: gray;
+        background-color: $color-bg-Ccart;
         display:flex;        
         justify-content: space-around;
-        align-items: center;        
+        align-items: center;     
+        padding-left: 1rem;
+        border-left:solid 2px;   
         .price{
-            background-color: gray;
+            background-color: $color-bg-Ccart;
             font-size: 1.5rem;
             margin:1rem;
         }
         .btn-quit{
-            @include customButton(30px,30px,100%,$color-red,20%);
+            @include customButton(31px,31px,18%,$color-btn-card);
+            transition:0.5s ease-in-out;
+            i{
+                font-size: xx-large;
+                background-color: transparent;
+                line-height: 29px; 
+            }
+        }
+        .btn-quit:hover{
+            background-color: rgba(236, 17, 17, 0.945);           
+            i{
+                text-shadow: -3px 2px 4px black;
+            }
         }
         .cant{
-            background-color: gray;
+            background-color: $color-bg-Ccart;   
+            margin-bottom: 0;                     
         }
         .btn-add{
-            @include customButton(30px,30px,100%,$color-green,20%);
+            @include customButton(31px,31px,18%,$color-btn-card);
+            transition:0.5s ease-in-out;
+            i{
+                font-size: xx-large;
+                background-color: transparent;
+                line-height: 29px; 
+            }
+        }
+        .btn-add:hover{
+            background-color: rgba(0, 199, 0, 0.932);
+            i{
+                text-shadow: -3px 2px 4px black;
+            }
         }
     }
 }

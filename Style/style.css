@@ -1,72 +1,65 @@
-.head {
+.navbar {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   background-color: black;
 }
-.head .panel {
-  background-color: black;
+.navbar .container-fluid.cart {
   display: flex;
   justify-content: flex-end;
-  height: 3rem;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-.head .panel .pan-links {
   background-color: black;
-  display: flex;
-  list-style: none;
-  padding-right: 3rem;
+  border-bottom: solid;
+  border-color: white;
 }
-.head .panel .pan-links .pan-item {
+.navbar .container-fluid.cart a {
   background-color: black;
-  align-content: center;
-  padding-right: 2rem;
+  margin-right: 2rem;
 }
-.head .panel .pan-links .pan-item a {
+.navbar .container-fluid.cart a i {
+  font-size: 1.5rem;
+  color: white;
   background-color: black;
-  color: aqua;
-  font-size: 1.3rem;
-  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
-.head .panel .pan-links .pan-item a i {
-  background-color: black;
+.navbar .container-fluid.cart a:hover i {
+  color: black;
+  background-color: white;
+  border-radius: 20%;
 }
-.head .panel .pan-links .pan-item:hover {
-  text-shadow: -3px 3px 2px gray;
+.navbar .container-fluid.nav {
+  background-color: Darkturquoise;
+  height: 4.5rem;
 }
-.head .navbar {
-  display: flex;
-  padding-left: 1rem;
-  background-color: rgb(156, 146, 146);
+.navbar .container-fluid.nav .navbar-brand {
+  background-color: Darkturquoise;
+  padding-top: 0;
+  margin-left: 4rem;
 }
-.head .navbar img {
-  width: 80px;
-  height: 80px;
-  margin: 0.4rem;
-  border-radius: 1.5rem;
+.navbar .container-fluid.nav .navbar-brand .logo {
+  width: 4rem;
+  border-radius: 1rem;
 }
-.head .navbar .nav-links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-left: 23rem;
-  background-color: rgb(156, 146, 146);
+.navbar .container-fluid.nav .collapse.navbar-collapse {
+  background-color: Darkturquoise;
+  justify-content: center;
 }
-.head .navbar .nav-links .nav-item {
-  background-color: rgb(156, 146, 146);
-  cursor: pointer;
+.navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav {
+  background-color: Darkturquoise;
+}
+.navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav .nav-item {
+  background-color: Darkturquoise;
+  align-self: center;
   margin-right: 5rem;
 }
-.head .navbar .nav-links .nav-item a {
-  background-color: rgb(156, 146, 146);
-  color: white;
-  text-decoration: none;
+.navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav .nav-item a {
+  transition: 0.15s;
+  color: black;
   font-size: 1.7rem;
+  font-weight: 500;
 }
-.head .navbar .nav-links .nav-item:hover {
-  text-shadow: -3px 3px 2px black;
+.navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav .nav-item a:hover {
+  border-bottom: solid 2px;
+  color: rgb(255, 255, 255);
+  text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.925);
 }
 
 .container {
@@ -75,129 +68,180 @@
   gap: 5rem;
   grid-auto-flow: column wrap;
   margin: 3rem;
+  margin-top: 9rem;
 }
 
 .container-cart {
   display: grid;
   grid-template-columns: 3fr 1.2fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: " producto compra" " producto  compra";
-  grid-column-gap: 0px;
-  grid-row-gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
 }
-.container-cart .total {
+.container-cart .cont-cart {
+  display: grid;
+  grid-column: 1;
+  grid-row-gap: 1.5rem;
+}
+.container-cart .container-total {
+  display: grid;
+  grid-column: 2;
+}
+.container-cart .container-total .total {
   display: flex;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
-  background-color: gray;
-  grid-area: compra;
+  background-color: darkturquoise;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  height: 30rem;
   margin-right: 1rem;
+  position: sticky;
+  border: solid 2px;
+  top: 8rem;
 }
-.container-cart .total h2 {
-  padding: 2rem;
-  background-color: gray;
+.container-cart .container-total .total h2 {
+  padding: 1rem;
+  background-color: darkturquoise;
+  border-bottom: solid;
 }
-.container-cart .total .item {
-  background-color: gray;
+.container-cart .container-total .total .item {
+  background-color: darkturquoise;
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
   width: 50%;
 }
-.container-cart .total .item p {
-  background-color: gray;
+.container-cart .container-total .total .item p {
+  background-color: darkturquoise;
   font-size: 1.1rem;
 }
-.container-cart .total .item h3 {
-  background-color: gray;
+.container-cart .container-total .total .item h3 {
+  background-color: darkturquoise;
   font-size: 1.8rem;
 }
-.container-cart .total button {
+.container-cart .container-total .total .item.p-total {
+  border-top: solid;
+}
+.container-cart .container-total .total button {
   margin: 2rem;
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1.4rem;
+  color: Black;
   width: 15rem;
   height: 2.5rem;
-  background-color: blue;
+  background-color: white;
   border-radius: 0.5rem;
   border: none;
   box-shadow: 3.5px 3px 12px black;
+  transition: 0.4s ease-in-out;
+}
+.container-cart .container-total .total button:hover {
+  background-color: rgba(0, 199, 0, 0.932);
+  text-shadow: -3px 2px 4px black;
+  color: white;
+  height: 2.65rem;
 }
 
 .card {
+  transition: 0.5s ease-in-out;
   max-width: 380px;
+  max-height: 640px;
   padding: 2rem;
-  background-color: gray;
+  margin-top: 3rem;
+  background-color: Darkturquoise;
   border-radius: 20px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
 }
 .card h3 {
-  background-color: gray;
+  background-color: Darkturquoise;
 }
 .card img {
   width: 100%;
+  transition: 0.3s ease-in-out;
 }
 .card .desc {
   margin-top: 2rem;
   font-size: smaller;
+  background-color: Darkturquoise;
 }
 .card .desc p {
-  background-color: gray;
+  background-color: Darkturquoise;
 }
 .card .card-footer {
-  background-color: gray;
+  background-color: Darkturquoise;
   display: flex;
   margin-top: 2rem;
   justify-content: space-around;
 }
 .card .card-footer .price {
-  background-color: gray;
+  background-color: Darkturquoise;
 }
 .card .card-footer .btn-quit {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
+  width: 31px;
+  height: 31px;
+  border-radius: 18%;
   border: 0px;
   cursor: pointer;
-  background-color: #c45353;
+  background-color: white;
+  transition: 0.5s ease-in-out;
 }
-.card .card-footer .btn-quit a:hover {
-  background-color: #db3c3c;
-  transition: all ease-in-out 0.3;
+.card .card-footer .btn-quit i {
+  font-size: xx-large;
+  background-color: transparent;
+  line-height: 29px;
+}
+.card .card-footer .btn-quit:hover {
+  background-color: rgba(236, 17, 17, 0.945);
+}
+.card .card-footer .btn-quit:hover i {
+  text-shadow: -3px 2px 4px black;
 }
 .card .card-footer .cant {
-  background-color: gray;
+  background-color: Darkturquoise;
 }
 .card .card-footer .btn-add {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
+  width: 31px;
+  height: 31px;
+  border-radius: 18%;
   border: 0px;
   cursor: pointer;
-  background-color: #20a842;
+  background-color: white;
+  transition: 0.5s ease-in-out;
 }
-.card .card-footer .btn-add a:hover {
-  background-color: #0cbc38;
-  transition: all ease-in-out 0.3;
+.card .card-footer .btn-add i {
+  font-size: xx-large;
+  background-color: transparent;
+  line-height: 29px;
+}
+.card .card-footer .btn-add:hover {
+  background-color: rgba(0, 199, 0, 0.932);
+}
+.card .card-footer .btn-add:hover i {
+  text-shadow: -3px 2px 4px black;
+}
+
+.card:hover img {
+  border-radius: 2%;
+  box-shadow: 0px 0px 15px 4.5px;
+}
+.card:hover .desc {
+  font-weight: 500;
 }
 
 .card-cart {
-  grid-area: "producto";
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-height: 6rem;
   max-width: 95%;
-  background-color: gray;
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 10px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
   margin-left: 2%;
+  border: solid 2px darkturquoise;
 }
 .card-cart h3 {
-  background-color: gray;
+  background-color: white;
 }
 .card-cart img {
   width: 5.3rem;
@@ -206,49 +250,71 @@
 .card-cart .desc {
   max-width: 50%;
   font-size: medium;
-  background-color: gray;
+  background-color: white;
+  border-left: solid 2px;
+  padding-left: 2rem;
 }
 .card-cart .desc p {
-  background-color: gray;
+  background-color: white;
+  margin-bottom: 0;
 }
 .card-cart .card-footer {
   width: 15rem;
-  background-color: gray;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 1rem;
+  border-left: solid 2px;
 }
 .card-cart .card-footer .price {
-  background-color: gray;
+  background-color: white;
   font-size: 1.5rem;
   margin: 1rem;
 }
 .card-cart .card-footer .btn-quit {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
+  width: 31px;
+  height: 31px;
+  border-radius: 18%;
   border: 0px;
   cursor: pointer;
-  background-color: #c45353;
+  background-color: white;
+  transition: 0.5s ease-in-out;
 }
-.card-cart .card-footer .btn-quit a:hover {
-  background-color: #db3c3c;
-  transition: all ease-in-out 0.3;
+.card-cart .card-footer .btn-quit i {
+  font-size: xx-large;
+  background-color: transparent;
+  line-height: 29px;
+}
+.card-cart .card-footer .btn-quit:hover {
+  background-color: rgba(236, 17, 17, 0.945);
+}
+.card-cart .card-footer .btn-quit:hover i {
+  text-shadow: -3px 2px 4px black;
 }
 .card-cart .card-footer .cant {
-  background-color: gray;
+  background-color: white;
+  margin-bottom: 0;
 }
 .card-cart .card-footer .btn-add {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
+  width: 31px;
+  height: 31px;
+  border-radius: 18%;
   border: 0px;
   cursor: pointer;
-  background-color: #20a842;
+  background-color: white;
+  transition: 0.5s ease-in-out;
 }
-.card-cart .card-footer .btn-add a:hover {
-  background-color: #0cbc38;
-  transition: all ease-in-out 0.3;
+.card-cart .card-footer .btn-add i {
+  font-size: xx-large;
+  background-color: transparent;
+  line-height: 29px;
+}
+.card-cart .card-footer .btn-add:hover {
+  background-color: rgba(0, 199, 0, 0.932);
+}
+.card-cart .card-footer .btn-add:hover i {
+  text-shadow: -3px 2px 4px black;
 }
 
 .cont-login {
@@ -257,7 +323,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .cont-login .login h2 {
   font-size: 2.5rem;
@@ -296,6 +362,11 @@
   border: none;
   box-shadow: 3.5px 3px 12px black;
 }
+.cont-login .login .form-login button:hover {
+  background-color: rgb(40, 40, 255);
+  box-shadow: 3.5px 3px 12px rgba(0, 0, 255, 0.788);
+  color: white;
+}
 .cont-login .link-register {
   height: 15rem;
   width: 30rem;
@@ -327,6 +398,14 @@
   background-color: gainsboro;
   text-decoration: none;
 }
+.cont-login .link-register button:hover {
+  background-color: gainsboro;
+  box-shadow: 3.5px 3px 10px gray;
+  color: white;
+}
+.cont-login .link-register button:hover a {
+  font-weight: 500;
+}
 
 .cont-register {
   display: flex;
@@ -334,7 +413,8 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  height: 83.75vh;
 }
 .cont-register .register h2 {
   font-size: 2.5rem;
@@ -350,7 +430,6 @@
 }
 .cont-register .register .form-register label {
   font-size: 1.5rem;
-  margin: 1.5rem;
 }
 .cont-register .register .form-register input {
   margin-bottom: 2.5rem;
@@ -380,25 +459,31 @@
   flex-wrap: nowrap;
   padding: 1rem;
   padding-left: 5rem;
-  background-color: gray;
+  background-color: black;
 }
 .pie .icon {
   font-size: 1.5rem;
   color: #ffffff;
-  background-color: gray;
+  background-color: black;
 }
 .pie .icon a {
   text-decoration: none;
   color: white;
 }
 .pie .icon a i {
-  background-color: #808080;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.pie .icon:hover a i {
+  text-shadow: -7px 2px 3px rgb(255, 255, 255);
+  color: white;
+  font-size: 1.55rem;
 }
 .pie .wpp, .pie .insta, .pie .facebook {
   margin-left: 3rem;
 }
 .pie .derechos {
-  margin-left: 20rem;
+  margin-left: 7rem;
 }
 
 * {

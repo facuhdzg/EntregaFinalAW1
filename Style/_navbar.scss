@@ -1,74 +1,68 @@
-//ENCABEZADO DE LA WEB
-.head{
-    display:flex;
+.navbar{
+    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
-    background-color: black;
-    //Panel con el logo   
-    .panel{ 
-        background-color: black; 
-        display: flex;        
-        justify-content: flex-end;        
-        height: 3rem;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;        
-        .pan-links{
+    background-color: black;    
+    .container-fluid.cart{
+        display: flex;
+        justify-content: flex-end;
+        background-color: black;
+        border-bottom: solid ;
+        border-color: white;
+        a{
             background-color: black;
-            display: flex;            
-            list-style: none;                       
-            padding-right: 3rem;                       
-            .pan-item{
+            margin-right: 2rem;           
+            i{
+                font-size: 1.5rem;
+                color: white;
                 background-color: black;
-                align-content: center;                
-                padding-right: 2rem;                                                             
-                a{
-                    background-color: black;
-                    color: aqua;
-                    font-size: 1.3rem;
-                    text-decoration: none;
-                    i{
-                        background-color: black;
-                    }                     
-                }
+                transition: 0.2s ease-in-out;
             }
-            .pan-item:hover{
-                text-shadow:-3px 3px 2px gray; 
-            }  
-        }           
-    }
-    //Barra de navegacion    
-    .navbar{
-        display:flex;
-        padding-left: 1rem;  
-        background-color: rgb(156, 146, 146);      
-        img{
-            width: 80px;
-            height: 80px;
-            margin: 0.4rem;
-            border-radius: 1.5rem;            
-        }        
-        .nav-links{
-            display: flex;          
-            align-items: center;             
-            list-style: none;
-            padding-left: 23rem;
-            background-color: rgb(156, 146, 146);                                         
-            .nav-item{   
-                background-color: rgb(156, 146, 146);                                
-                cursor:pointer;
-                margin-right: 5rem;                              
-                a{ 
-                    background-color: rgb(156, 146, 146);                     
-                    color:white;
-                    text-decoration: none;
-                    font-size: 1.7rem;                                                            
-                }    
-                                   
-            }   
-            .nav-item:hover{
-                text-shadow:-3px 3px 2px black;                
-            }       
-        }        
-    }
+        }
+        a:hover{            
+            i{
+                color:black;//prueba
+                background-color: white;
+                border-radius: 20%;                
+            }
+            
+        }
+    }   
+    .container-fluid.nav{
+        background-color: $color-bg-head;
+        height: 4.5rem;
+        .navbar-brand{
+            background-color: $color-bg-head;
+            padding-top: 0;
+            margin-left: 4rem;
+            .logo{
+                width: 4rem;
+                border-radius: 1rem;                
+            }
+        }   
+       .collapse.navbar-collapse{
+            background-color: $color-bg-head;
+            justify-content: center;            
+            .navbar-nav{
+                background-color: $color-bg-head;
+                        
+                .nav-item{
+                    background-color: $color-bg-head;
+                    align-self: center;
+                    margin-right: 5rem;
+                    a{     
+                        transition: 0.15s;                  
+                        color: black;
+                        font-size: 1.7rem;
+                        font-weight: 500;                        
+                    }
+                    a:hover{
+                        border-bottom: solid 2px;
+                        color: rgb(255, 255, 255);
+                        text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.925);
+                    }
+                }
+                    
+            }
+       }
+    } 
 }
