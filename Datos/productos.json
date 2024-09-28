@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "marca": "Nike",
+        "descripcion": "Nike Air Max SYSTM",
+        "precio": 144999.00,
+        "categoria": "calzado",
+        "img":"https://sporting.vtexassets.com/arquivos/ids/1070920-1200-1200?v=638440400876670000&width=1200&height=1200&aspect=true"
+    },
+    {
+        "id": 2,
+        "marca": "Yeezy",
+        "descripcion": "Zapatillas Yeezy Boost 350 V2 Adidas",
+        "precio": 299999.00,
+        "categoria": "calzado",
+        "img":"https://www.digitalsport.com.ar/files/products/64dce43cd9ab1-630998-500x500.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "Lacoste",
+        "descripcion": "Zapatillas Elite Active Lacoste",
+        "precio": 179899.00,
+        "categoria": "calzado",
+        "img":"https://www.digitalsport.com.ar/files/products/66d5ee0fef0ba-668675-500x500.jpg"
+    },
+    {
+        "id": 4,
+        "marca": "Lacoste",
+        "descripcion": "Zapatillas Lineshot Lacoste",
+        "precio": 154899.00,
+        "categoria": "calzado",
+        "img":"https://www.digitalsport.com.ar/files/products/65e634dd4eb81-647088-500x500.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Under Armour",
+        "descripcion": "Zapatillas Project Rock 6 Under Armour",
+        "precio": 299999.00,
+        "categoria": "calzado",
+        "img":"https://www.digitalsport.com.ar/files/products/66c5f0fc5c0c6-619712-500x500.jpg"
+    },
+
+    {
+        "id": 6,
+        "marca": "Puma",
+        "descripcion": "Remera Puma X Pleasures Puma",
+        "precio": 73599.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/66d0532adea10-625889-500x500.jpg"
+    },
+    {
+        "id": 7,
+        "marca": "Fila",
+        "descripcion": "Remera Explore Fila",
+        "precio": 21899.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/666cae942f97e-658630-500x500.jpg"
+    },
+    {
+        "id": 8,
+        "marca": "Revolver",
+        "descripcion": "Buzo Pampa Eandi Revolver",
+        "precio": 64999.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/661ffdd9d491c-648089-500x500.jpg"
+    },
+    {
+        "id": 9,
+        "marca": "Adidas",
+        "descripcion": "Buzo Adventure Fabric Mix Adidas",
+        "precio": 137999.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/65fb7771c2e2f-583404-500x500.jpg"
+    },
+    {
+        "id": 10,
+        "marca": "Lacoste",
+        "descripcion": "Canguro Cocodrilo Lacoste",
+        "precio": 199999.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/65ef9a9c95efb-647246-500x500.jpg"
+    },
+
+    {
+        "id": 11,
+        "marca": "Lacoste",
+        "descripcion": "Pantalon Survetement Lacoste",
+        "precio": 129899.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/65dc99b992518-647980-500x500.jpg"
+    },
+    {
+        "id": 12,
+        "marca": "Bolivia",
+        "descripcion": "Pantalon Escudo Playstation Bolivia",
+        "precio": 79899.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/66db33d5ba10c-671789-500x500.jpg"
+    },
+    {
+        "id": 13,
+        "marca": "Fila",
+        "descripcion": "Bermuda Hoops Fila",
+        "precio": 31899.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/65d090eaab58a-643301-500x500.jpg"
+    },
+    {
+        "id": 14,
+        "marca": "Nike",
+        "descripcion": "Short Form Nike",
+        "precio": 47999.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/66e1cc074bd38-622413-500x500.jpg"
+    },
+    {
+        "id": 15,
+        "marca": "Nike",
+        "descripcion": "Pantalon Tech Fleece Nike",
+        "precio": 177499.00,
+        "categoria": "indumentaria",
+        "img":"https://www.digitalsport.com.ar/files/products/661e5e40b4612-609319-500x500.jpg"
+    },
+
+    {
+        "id": 16,
+        "marca": "Puma",
+        "descripcion": "Mochila Bl Medium Puma",
+        "precio": 124999.00,
+        "categoria": "accesorios",
+        "img":"https://www.digitalsport.com.ar/files/products/65b80fa2e1409-624715-500x500.jpg"
+    },
+    {
+        "id": 17,
+        "marca": "New Era",
+        "descripcion": "Gorra 940 Nba New York Knicks New Era",
+        "precio": 43700.00,
+        "categoria": "accesorios",
+        "img":"https://www.digitalsport.com.ar/files/products/66a4d247b18b0-654543-500x500.jpg"
+    },
+    {
+        "id": 18,
+        "marca": "Adidas",
+        "descripcion": "Pack X 3 Medias Trefoil Cushion Adidas",
+        "precio": 12999.00,
+        "categoria": "accesorios",
+        "img":"https://www.digitalsport.com.ar/files/products/669e567034454-652484-500x500.jpg"
+    },
+    {
+        "id": 19,
+        "marca": "New Era",
+        "descripcion": "Gorra Oracle Red Bull Racing New Era",
+        "precio": 51700.00,
+        "categoria": "accesorios",
+        "img":"https://www.digitalsport.com.ar/files/products/66aad07b0da0b-654492-500x500.jpg"
+    },
+    {
+        "id": 20,
+        "marca": "Stanley",
+        "descripcion": "Botella Flip Straw 591Ml Stanley",
+        "precio": 88000.00,
+        "categoria": "accesorios",
+        "img":"https://www.digitalsport.com.ar/files/products/66b3a5ebae798-665515-500x500.jpg"
+    }
+
+    
+]

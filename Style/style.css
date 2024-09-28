@@ -66,9 +66,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 5rem;
-  grid-auto-flow: column wrap;
-  margin: 3rem;
+  margin-bottom: 3rem;
   margin-top: 9rem;
+  width: 100vw;
 }
 
 .container-cart {
