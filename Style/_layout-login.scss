@@ -1,10 +1,10 @@
 .cont-login{
     display: flex;
-    margin:2rem;
+    padding: 2rem;    
     flex-direction: column;    
     align-items: center;    
     flex-wrap: nowrap;
-    margin-top: 1rem;
+    margin-top: 1rem;    
     .login{
        h2{
             font-size: 2.5rem;
@@ -24,8 +24,7 @@
             }
             input{
                 margin-bottom: 2.5rem;
-                width: 22rem;
-                height: 3rem;
+                width: 22rem;                
                 border-radius: 0.8rem;
                 border-style: initial;
                 background-color: aliceblue;                  
@@ -36,8 +35,7 @@
                 margin:2rem;                
                 font-size: 1.2rem;
                 color: white;
-                width: 15rem;
-                height: 2.5rem;
+                width: 15rem;                
                 background-color: blue;
                 border-radius: 0.5rem;
                 border: none;
@@ -51,8 +49,7 @@
        }
     }
     
-    .link-register{
-        height: 15rem;
+    .link-register{        
         width: 30rem;        
         display: flex;
         flex-direction: column;
@@ -68,8 +65,7 @@
         }
         button{
             margin-top: 2rem;
-            width: 20rem;
-            height: 3rem;            
+            width: 20rem;                      
             background-color: gainsboro;
             border-radius: 0.5rem;
             border: none;
@@ -90,4 +86,101 @@
             }
         }
     }
+}
+@media screen and (min-width:320px) {
+    .cont-login{
+        .login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin-top: 1rem;           
+            .form-login{
+                input{
+                    width: 90%;
+                    padding:0.6rem;                    
+                }
+                button{
+                    padding: 0.6rem;
+                }
+            }
+        }
+        .link-register{
+            width: auto;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            p{
+                margin:0;
+                padding:1rem;
+
+            }
+            button{
+                margin-top: 1rem;                
+                width: 15rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+@media screen and (min-width:480px) {
+    .cont-login{
+        .login{
+            width: 80%;
+            .form-login{
+                width: 80%;
+                button{
+                    width: 80%;
+                }
+            }
+        }
+        .link-register{
+            width: 80%;
+            padding-bottom: 2rem;
+        }
+    }    
+}
+@media screen and (min-width:628px) {
+    .cont-login{
+        .login{            
+            .form-login{                
+                button{
+                    width: 70%;
+                }
+            }
+        }        
+        .link-register{
+            width: 70%;
+        }
+    }    
+}
+@media screen and (min-width:960px) {
+    .cont-login{
+        .login{            
+            .form-login{                
+                button{
+                    width: 50%;
+                }
+            }
+        }        
+        .link-register{
+            width: 50%;
+        }
+    }    
+}
+@media screen and (min-width:1024px) {
+    .cont-login{
+        .login{            
+            .form-login{                
+                input{
+                    width: 30rem;
+                }
+                button{
+                    width: 20rem;
+                }
+            }
+        }        
+        .link-register{
+            width: 35rem;
+        }
+    }    
 }

@@ -3,7 +3,7 @@ const url='http://127.0.0.1:5503/';
 //Const que guarda los links y titulos del panel
 const panElement=[
     {title:'<i id="btnLogOut" class="bi bi-box-arrow-in-left"></i>',link:`../../index.html`},
-    {title:'<i class="bi bi-cart3"></i>',link:`${url}pages/Carrito/Carrito.html`}
+    {title:'<i class="bi bi-cart3"></i>',link:`${url}pages/Carrito/carrito.html`}
 ];
 /* Constante que almacena los links y titulos del navbar */
 const navbarElements=[

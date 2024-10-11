@@ -9,6 +9,8 @@
 }
 //Formato de las cartas
 .card{
+    display: flex;
+    justify-self: center;
     transition:0.5s ease-in-out;
     max-width: 380px;
     max-height: 640px;
@@ -23,6 +25,7 @@
     img{
         width:100%;       
         transition:0.3s ease-in-out;
+        border-radius: 2%;
     }
 
     .desc{  
@@ -86,6 +89,7 @@
         font-weight: 500;        
     }
 }
+
 //Card del carrito
 .card-cart{    
     display:flex;

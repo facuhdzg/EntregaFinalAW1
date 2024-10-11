@@ -1,9 +1,8 @@
 //Imports
-import { cartCardComponent } from "../components/cardsCart.js";
 import { footerComponent } from "../components/footer.js";
 import { cardComponent } from "../components/cards.js";
 import { navBoots } from "../components/navbar.js";
-
+import {setupCartButtons} from "./Carrito/carrito.js"
 /* Vincula la variable con el contenedor */
 let footContainer=document.querySelector('.pie');
 let navContainer = document.querySelector('.head');
@@ -21,13 +20,8 @@ window.addEventListener('load',()=>{
     {   
         footContainer.innerHTML=footerComponent; 
     };    
-    if(cardsCartContainer)
-    {
-        cardsCartContainer.innerHTML=cartCardComponent;
-    };   
-    
     // Obtener los datos del JSON
-    fetch('../Datos/productos.json')
+    fetch('http://127.0.0.1:5503/Datos/productos.json')
         .then(resp => {
             if (!resp.ok) {
                 throw new Error('Error al cargar los productos');
@@ -37,7 +31,6 @@ window.addEventListener('load',()=>{
         .then(prod => {
             let productosFiltrados = []; 
             let categoriaActual = '';
-
             // Lógica para obtener la categoría
             switch (document.title.replace('Tienda/', '').trim()) {
                 case 'Home':
@@ -52,8 +45,7 @@ window.addEventListener('load',()=>{
                 case 'Accesorios':
                     categoriaActual = 'accesorios';
                     break;                
-            }
-
+            };
             // Filtrar productos
             if (categoriaActual !== 'Home') {
                 productosFiltrados = prod.filter(producto => producto.categoria === categoriaActual);
@@ -67,14 +59,22 @@ window.addEventListener('load',()=>{
                 let Indselecc = obtenerProductosAleatorios(Indumentaria, 3);
 
                 productosFiltrados = calselecc.concat(Accselecc, Indselecc);
-            }
-
+            };
             // Actualiza el contenedor de las cards
             if (cardContainer) {
                 cardContainer.innerHTML = cardComponent(productosFiltrados);
                 agregarEventosBotones();
-            }
-        })
+            };
+            //Si existen cards en el carrito
+            if(cardsCartContainer)
+            {
+                const cardElements = cardsCartContainer.querySelectorAll('.card-cart');
+                if(cardElements.length >0)
+                {
+                    agregarEventosBotones();                    
+                };                              
+            };
+        });        
 });
 //Funcion que genera numeros aleatorios para mostrar las cards
 function obtenerProductosAleatorios(array, cantidad) {
@@ -91,8 +91,7 @@ function obtenerProductosAleatorios(array, cantidad) {
     }
     //Devuelve array con los id
     return productosAleatorios;
-}
-
+};
 // Función para agregar eventos a los botones
 function agregarEventosBotones() {
     let btnAdd = document.querySelectorAll('.btn-add');
@@ -118,5 +117,7 @@ function agregarEventosBotones() {
             }
         });
     });
-}
+    //Funcion de añadir al carrito
+    setupCartButtons();
+};
 

@@ -37,3 +37,29 @@
         margin-left: 7rem;
     }
 }
+@media screen and (min-width:320px) and (max-width:480px){
+    .pie{
+        width: 100vw;
+        padding-left: 0;
+        align-items: center;
+        .wpp ,.insta,.facebook {           
+            margin-left: 1rem;
+        }
+        .derechos{        
+            margin-left: 2rem;
+        }
+    }
+    
+}
+@media screen and (min-width:480px) {
+    .pie{
+        padding-left: 0;
+        align-items: center;
+        .wpp ,.insta,.facebook {           
+            margin-left: 2rem;
+        }
+        .derechos{        
+            margin-left: 2rem;
+        }
+    }
+}
