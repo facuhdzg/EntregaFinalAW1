@@ -19,7 +19,14 @@ window.addEventListener('load',()=>{
     if(footContainer)
     {   
         footContainer.innerHTML=footerComponent; 
-    };    
+    };
+    //Lista los productos en las paginas
+    listraProductos();
+    //Cierra Sesion
+    cerrarSesion();           
+});
+//Funcion para listar los productos en las paginas
+function listraProductos() {
     // Obtener los datos del JSON
     fetch('http://127.0.0.1:5503/Datos/productos.json')
         .then(resp => {
@@ -31,6 +38,7 @@ window.addEventListener('load',()=>{
         .then(prod => {
             let productosFiltrados = []; 
             let categoriaActual = '';
+
             // Lógica para obtener la categoría
             switch (document.title.replace('Tienda/', '').trim()) {
                 case 'Home':
@@ -60,12 +68,14 @@ window.addEventListener('load',()=>{
 
                 productosFiltrados = calselecc.concat(Accselecc, Indselecc);
             };
+
             // Actualiza el contenedor de las cards
             if (cardContainer) {
                 cardContainer.innerHTML = cardComponent(productosFiltrados);
                 agregarEventosBotones();
-            };
-            //Si existen cards en el carrito
+            };           
+            // Busca las tarjetas dentro del contenedor
+            
             if(cardsCartContainer)
             {
                 const cardElements = cardsCartContainer.querySelectorAll('.card-cart');
@@ -74,8 +84,9 @@ window.addEventListener('load',()=>{
                     agregarEventosBotones();                    
                 };                              
             };
-        });        
-});
+            
+        });
+};
 //Funcion que genera numeros aleatorios para mostrar las cards
 function obtenerProductosAleatorios(array, cantidad) {
     const productosAleatorios = [];
@@ -119,5 +130,12 @@ function agregarEventosBotones() {
     });
     //Funcion de añadir al carrito
     setupCartButtons();
+};
+function cerrarSesion() {
+    let btnLogOut= document.getElementById('btnLogOut');
+    btnLogOut.addEventListener('click',()=>{
+        // Elimina el token del sessionStorage
+        sessionStorage.removeItem('token');
+    });
 };
 

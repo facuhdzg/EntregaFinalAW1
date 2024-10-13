@@ -12,16 +12,64 @@
         gap:1rem;
         grid-template-columns: repeat(auto-fill,minmax(16.5rem,0.8fr));
         justify-content: center;
+        .card{
+            .img-btn{                
+                .btn-cart{                    
+                    top: 82%;
+                    left: 83%;                    
+                }               
+            }
+        }
+    }
+}
+@media screen and (min-width:500px) {
+    .container{        
+        .card{
+            .img-btn{                
+                .btn-cart{                    
+                    top: 89%;
+                    left: 89%;                    
+                }               
+            }
+        }        
     }
 }
 @media screen and (min-width: 568px) and (max-width:575px) {
     .container{
-        gap:3rem;        
+        gap:3rem;
+        .card{
+            .img-btn{                
+                .btn-cart{                    
+                    top: 89%;
+                    left: 89%;                    
+                }               
+            }
+        }        
+    }
+}
+@media screen and (min-width:578px) {
+    .container{        
+        .card{
+            .img-btn{                
+                .btn-cart{                    
+                    top: 89%;
+                    left: 89%;                    
+                }               
+            }
+        }        
     }
 }
 @media screen and (min-width: 768px) {
     .container{
-        gap:3rem;        
+        gap:3rem;
+        .card{
+            .img-btn{                
+                .btn-cart{                    
+                    top: 86%;
+                    left: 86%;                    
+                }               
+            }
+        }         
     }
 }
 @media screen and (min-width: 992px) and (max-width:1024px) {
@@ -53,6 +101,18 @@
         display:grid;
         grid-column: 1;        
         grid-row-gap: 1.5rem;
+        .card-cart{    
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            max-height: 6rem;
+            max-width: 95%;    
+            background-color: $color-bg-Ccart;
+            border-radius: 10px;
+            box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);    
+            margin-left: 2%;
+            border:solid 2px darkturquoise;            
+        }
     }
     .container-total{
         display: grid;
@@ -115,3 +175,180 @@
     }
       
 }
+@media screen and (min-width:320px){
+    .container-cart{
+        display: flex;
+        flex-direction:column;
+        min-height: 70vh;        
+        .cont-cart{
+            width: 100%;
+            .card-cart{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                max-height: 25rem;
+                justify-self: center;
+                margin:0;
+                .desc{
+                    border-right: solid 2px;
+                }
+                .card-footer{
+                    border-left: none;
+                }
+            }
+        }
+        .container-total{
+            display: flex;            
+            padding-top: 1rem;
+            justify-content: center;
+            background-color: transparent;
+            .total{
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 406px) {
+    .container-cart{
+        .cont-cart{            
+            .desc{
+                padding-right: 2rem;
+            }
+        }
+        
+    }
+}
+@media screen and (min-width: 568px) {
+    .container-cart{
+        min-height: 75vh;
+        .cont-cart{        
+            .card-cart{            
+                width: 70%;
+                img{
+                    width: 12rem;
+                }
+            }
+        }
+        .container-total{
+            width: 100%;
+            .total{
+                width: 80%;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .container-cart{
+        .cont-cart{        
+            .card-cart{            
+                width: 60%;
+                img{
+                    width: 12rem;
+                }
+            }
+            .desc{
+                padding-right: 2rem;
+            }
+        }
+        .container-total{
+            width: 100%;
+            .total{
+                width: 70%;
+            }
+        }
+    }
+}
+@media screen and (min-width:900px) {
+    .container-cart{
+        .cont-cart{        
+            .card-cart{            
+                width: 50%;
+                max-height: 30rem;
+                img{
+                    width: 15rem;
+                }
+            }
+            .desc{
+                padding-right: 2rem;                
+            }
+            .card-footer{
+                padding: 0;
+                padding-top: 1rem;
+            }
+        }
+        .container-total{            
+            .total{
+                width: 60%;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .container-cart{
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;       
+        .cont-cart{
+            display:grid;
+            grid-column: 1;          
+        }
+        .container-total{
+            display: grid;
+            grid-column: 2;
+            .total{
+                display: flex;                  
+                width: 100%;
+                .item{
+                    width: 60%;
+                }
+            }
+        }                         
+                
+    }
+}
+@media screen and (min-width: 1200px){
+    .container-cart{
+        min-height: 74vh;        
+        .cont-cart{            
+            .card-cart{
+                min-width: 95%;
+                max-height: 6.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;                
+                img{
+                    width: 6rem;
+                }
+                .desc{                    
+                    padding: 0;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    
+                }
+                .card-footer{
+                    padding: 0;                    
+                }
+            }
+        }
+        .container-total{
+            padding: 0;
+            .total{
+                margin-right: 1rem;
+                min-width: 25rem;
+            }
+        }
+          
+    }
+}
+@media screen and (min-width: 1500px) {
+    .container-cart{
+        height:76.2vh;
+        .container-total{
+            .total{
+                min-width: 30em;              
+            }
+        }
+    }
+}
+

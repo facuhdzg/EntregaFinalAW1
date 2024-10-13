@@ -21,11 +21,22 @@
     box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);
     h3{
         background-color: $color-bg-card;
-    }
-    img{
-        width:100%;       
-        transition:0.3s ease-in-out;
-        border-radius: 2%;
+    }    
+    .img-btn{
+        position:relative;
+        img{
+            width:100%;       
+            transition:0.3s ease-in-out;
+            border-radius: 2%;   
+        }
+        .btn-cart{
+            position: absolute;
+            top: 89%;
+            left: 89%;
+            height: 31px;
+            width: 31px;
+            border-radius: 20%;
+        }               
     }
 
     .desc{  
@@ -104,11 +115,13 @@
     border:solid 2px darkturquoise;
     h3{
         background-color: $color-bg-Ccart;
-    }
+    }    
     img{
         width:5.3rem;        
-        border-radius: 1rem;        
+        border-radius: 1rem;   
     }
+                    
+    
 
     .desc{
         max-width: 50%;                   
@@ -123,7 +136,7 @@
     }
 
     .card-footer{        
-        width: 15rem;
+        width: 17rem;
         background-color: $color-bg-Ccart;
         display:flex;        
         justify-content: space-around;
@@ -167,6 +180,24 @@
             background-color: rgba(0, 199, 0, 0.932);
             i{
                 text-shadow: -3px 2px 4px black;
+            }
+        }
+        .btn-delete{
+            width: 31px;
+            height: 31px;
+            border-radius: 18%;            
+            cursor: pointer;            
+            transition: 0.5s ease-in-out;
+            i{
+                transition: 0.5s ease-in-out;
+            }
+        }
+        .btn-delete:hover{
+            background-color: rgba(236, 17, 17, 0.897);           
+            i{
+                text-shadow: -3px 2px 4px black;
+                background-color: rgba(236, 17, 17, 0.897);                  
+                font-weight: 700;
             }
         }
     }
