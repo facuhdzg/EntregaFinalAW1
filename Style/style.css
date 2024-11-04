@@ -26,11 +26,11 @@
   border-radius: 20%;
 }
 .navbar .container-fluid.nav {
-  background-color: Darkturquoise;
+  background-color: white;
   height: 4.5rem;
 }
 .navbar .container-fluid.nav .navbar-brand {
-  background-color: Darkturquoise;
+  background-color: white;
   padding-top: 0;
   margin-left: 4rem;
 }
@@ -39,14 +39,14 @@
   border-radius: 1rem;
 }
 .navbar .container-fluid.nav .collapse.navbar-collapse {
-  background-color: Darkturquoise;
+  background-color: white;
   justify-content: center;
 }
 .navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav {
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .navbar .container-fluid.nav .collapse.navbar-collapse .navbar-nav .nav-item {
-  background-color: Darkturquoise;
+  background-color: white;
   align-self: center;
   margin-right: 5rem;
 }
@@ -181,7 +181,6 @@
   border-radius: 10px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
   margin-left: 2%;
-  border: solid 2px darkturquoise;
 }
 .container-cart .container-total {
   display: grid;
@@ -191,34 +190,35 @@
   display: flex;
   border-radius: 15px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
-  background-color: darkturquoise;
+  background-color: black;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 30rem;
   margin-right: 1rem;
   position: sticky;
-  border: solid 2px;
   top: 8rem;
 }
 .container-cart .container-total .total h2 {
   padding: 1rem;
-  background-color: darkturquoise;
+  background-color: black;
+  color: white;
   border-bottom: solid;
 }
 .container-cart .container-total .total .item {
-  background-color: darkturquoise;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
   width: 50%;
 }
 .container-cart .container-total .total .item p {
-  background-color: darkturquoise;
+  background-color: black;
   font-size: 1.1rem;
 }
 .container-cart .container-total .total .item h3 {
-  background-color: darkturquoise;
+  background-color: black;
   font-size: 1.8rem;
 }
 .container-cart .container-total .total .item.p-total {
@@ -387,7 +387,7 @@
 }
 @media screen and (min-width: 1500px) {
   .container-cart {
-    height: 76.2vh;
+    min-height: 76.2vh;
   }
   .container-cart .container-total .total {
     min-width: 30em;
@@ -401,12 +401,12 @@
   max-height: 640px;
   padding: 2rem;
   margin-top: 3rem;
-  background-color: Darkturquoise;
+  background-color: white;
   border-radius: 20px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
 }
 .card h3 {
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .card .img-btn {
   position: relative;
@@ -415,6 +415,7 @@
   width: 100%;
   transition: 0.3s ease-in-out;
   border-radius: 2%;
+  cursor: zoom-in;
 }
 .card .img-btn .btn-cart {
   position: absolute;
@@ -427,19 +428,18 @@
 .card .desc {
   margin-top: 2rem;
   font-size: smaller;
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .card .desc p {
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .card .card-footer {
-  background-color: Darkturquoise;
+  background-color: white;
   display: flex;
-  margin-top: 2rem;
   justify-content: space-around;
 }
 .card .card-footer .price {
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .card .card-footer .btn-quit {
   width: 31px;
@@ -462,7 +462,7 @@
   text-shadow: -3px 2px 4px black;
 }
 .card .card-footer .cant {
-  background-color: Darkturquoise;
+  background-color: white;
 }
 .card .card-footer .btn-add {
   width: 31px;
@@ -503,7 +503,6 @@
   border-radius: 10px;
   box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.37);
   margin-left: 2%;
-  border: solid 2px darkturquoise;
 }
 .card-cart h3 {
   background-color: white;
@@ -655,8 +654,8 @@
   flex-wrap: nowrap;
   align-items: center;
   margin: 1rem;
-  border-style: solid;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  box-shadow: -2px 5px 15px 2px black;
 }
 .cont-login .link-register p {
   font-size: 1.3rem;

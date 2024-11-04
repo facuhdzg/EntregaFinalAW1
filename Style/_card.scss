@@ -27,8 +27,10 @@
         img{
             width:100%;       
             transition:0.3s ease-in-out;
-            border-radius: 2%;   
+            border-radius: 2%;
+            cursor: zoom-in;   
         }
+        
         .btn-cart{
             position: absolute;
             top: 89%;
@@ -50,8 +52,7 @@
 
     .card-footer{
         background-color: $color-bg-card;
-        display:flex;
-        margin-top: 2rem;
+        display:flex;        
         justify-content: space-around;
         .price{
             background-color: $color-bg-card;
@@ -111,8 +112,7 @@
     background-color: $color-bg-Ccart;
     border-radius: 10px;
     box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);    
-    margin-left: 2%;
-    border:solid 2px darkturquoise;
+    margin-left: 2%;    
     h3{
         background-color: $color-bg-Ccart;
     }    

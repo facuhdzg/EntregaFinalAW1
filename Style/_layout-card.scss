@@ -96,7 +96,7 @@
     display: grid;
     grid-template-columns: 3fr 1.2fr;  
     margin-top: 9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
     .cont-cart{
         display:grid;
         grid-column: 1;        
@@ -110,8 +110,7 @@
             background-color: $color-bg-Ccart;
             border-radius: 10px;
             box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37);    
-            margin-left: 2%;
-            border:solid 2px darkturquoise;            
+            margin-left: 2%;                        
         }
     }
     .container-total{
@@ -121,32 +120,33 @@
             display: flex;
             border-radius: 15px;
             box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.37); 
-            background-color: darkturquoise;                  
+            background-color: black;                  
             align-items: center;
             justify-content: center;
             flex-direction: column;
             height: 30rem;
             margin-right: 1rem;
-            position: sticky;
-            border:solid 2px;
+            position: sticky;            
             top: 8rem;                          
             h2{
                 padding: 1rem;
-                background-color: darkturquoise; 
+                background-color: black;
+                color: white;
                 border-bottom: solid ;
             }        
             .item{                
-                background-color: darkturquoise;
+                background-color: black;
+                color:white;
                 display: flex;
                 justify-content: space-between;
                 margin: 0.5rem 0;
                 width: 50%;
                 p{
-                    background-color: darkturquoise;
+                    background-color: black;
                     font-size: 1.1rem;
                 }
                 h3{
-                    background-color: darkturquoise;
+                    background-color: black;
                     font-size: 1.8rem;                    
                 }                
             }
@@ -343,7 +343,7 @@
 }
 @media screen and (min-width: 1500px) {
     .container-cart{
-        height:76.2vh;
+        min-height: 76.2vh;
         .container-total{
             .total{
                 min-width: 30em;              
