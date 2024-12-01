@@ -73,6 +73,8 @@ function listraProductos() {
             if (cardContainer) {
                 cardContainer.innerHTML = cardComponent(productosFiltrados);
                 agregarEventosBotones();
+                //Funcion que muestra las imagenes de los productos
+                ModalCarrusel();
             };           
             // Busca las tarjetas dentro del contenedor
             
@@ -137,5 +139,98 @@ function cerrarSesion() {
         // Elimina el token del sessionStorage
         sessionStorage.removeItem('token');
     });
+};
+//Selecciona la card que se hizo click
+function ModalCarrusel (){
+    //Selecciona todas las cards
+    let cardIMG= document.querySelectorAll('.imgModal');
+    cardIMG.forEach(e =>{
+        //Cuando haces click muestra el modal
+        e.addEventListener('click',()=>{            
+            //Selecciona el elemento "card" mas cercano
+            const card = e.closest('.card');
+            //Crea un item producto
+            const producto = {
+                id: card.getAttribute('data-id'),
+                marca: card.querySelector('h3').textContent,
+                img: card.querySelector('img').src,
+                descripcion: card.querySelector('.desc p').textContent,
+                precio: card.querySelector('.price').textContent,
+                cantidad: parseInt(card.querySelector('.cant').textContent) //pasa la cantidad a numero
+            };
+            console.log(producto);
+            // Fetch para obtener los datos del JSON
+            fetch('http://127.0.0.1:5503/Datos/productos.json')
+            .then(response => response.json())
+            .then(data => {
+                // Filtra el producto por id
+                const productoEncontrado = data.find(item => String(item.id) === String(producto.id));
+                if (productoEncontrado) {
+                    // Aquí puedes abrir el modal y mostrar la información
+                    mostrarModal(productoEncontrado);
+                } else {
+                    console.error('Producto no encontrado');
+                };
+            })
+            .catch(error => console.error('Error al cargar los productos:', error));            
+        });
+    });
+};
+//Crea el modal y lo muestra en pantalla
+function mostrarModal(producto) {    
+    // Declara modalHTML y crea el contenido HTML del modal
+    const modalHTML = `
+        <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="miModalLabel">${producto.marca}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">                      
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="${producto.img}" class="d-block w-100" alt="${producto.descripcion}">
+                                </div>                                
+                                ${producto.imagenes.map((img)=>{
+                                    return`
+                                        <div class="carousel-item">
+                                            <img src="${img}" class="d-block w-100" alt="${producto.descripcion}">
+                                        </div>
+                                    `
+                                }).join('')}
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p>${producto.descripcion}</p>
+                        <p>Precio: $${producto.precio}</p>                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    // Inserta el modal en el DOM
+    let containerModal = document.querySelector('.modalContainer');
+    containerModal.innerHTML = modalHTML;
+
+    // Muestra el modal
+    const modal = new bootstrap.Modal(document.getElementById('miModal'));
+    modal.show();
+
+    // Opcional: limpiar el modal del DOM después de cerrarlo
+    document.getElementById('miModal').addEventListener('hidden.bs.modal', function () {
+        this.remove();
+    });    
 };
 

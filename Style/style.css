@@ -599,6 +599,25 @@
   font-weight: 700;
 }
 
+.modalContainer .modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner {
+  align-content: center;
+  height: 25rem;
+}
+.modalContainer .modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 25rem;
+}
+.modalContainer .modal .modal-dialog .modal-content .modal-body .carousel .carousel-control-prev .carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 20%;
+}
+.modalContainer .modal .modal-dialog .modal-content .modal-body .carousel .carousel-control-next .carousel-control-next-icon {
+  background-color: black;
+  border-radius: 20%;
+}
+
 .cont-login {
   display: flex;
   padding: 2rem;
@@ -909,5 +928,4 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: white;
 }/*# sourceMappingURL=style.css.map */

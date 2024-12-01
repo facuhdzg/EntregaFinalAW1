@@ -6,7 +6,7 @@ export const cardComponent=(productos)=>{
             <div class="card" data-id="${e.id}">
                 <h3>${e.marca}</h3>
                 <div class="img-btn">
-                    <img src="${e.img}" alt="${e.marca}"></img>
+                    <img class="imgModal" src="${e.img}" alt="${e.marca}"></img>
                     <button class="btn-cart"><i class="bi bi-cart3"></i></button> 
                 </div>
 
@@ -24,14 +24,4 @@ export const cardComponent=(productos)=>{
         }).join('')}
     `;
 };
-
-{/* <div class="cart">
-<button class="btn-cart"><i class="bi bi-cart3"></i></button>
-</div>  */}
-{/* <button class="btn-cart"><i class="bi bi-cart3"></i></button> */}
-        
-{/* <div class="img-btn">
-    <img src="${e.img}" alt="${e.marca}"></img>
-    <button class="btn-cart"><i class="bi bi-cart3"></i></button> 
-</div> */}
  

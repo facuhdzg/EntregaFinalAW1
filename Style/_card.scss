@@ -202,4 +202,40 @@
         }
     }
 }
+//Modal con imagenes
+.modalContainer{
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    .carousel{
+                        .carousel-inner{                            
+                            align-content: center;
+                            height: 25rem;
+                            .carousel-item{
+                                img{
+                                    width: 100%;
+                                    object-fit: contain;
+                                    max-height: 25rem;
+                                }                                
+                            }                            
+                        }
+                        .carousel-control-prev{
+                            .carousel-control-prev-icon{
+                                background-color: black;
+                                border-radius: 20%;
+                            }
+                        }
+                        .carousel-control-next{
+                            .carousel-control-next-icon{
+                                background-color: black;
+                                border-radius: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 

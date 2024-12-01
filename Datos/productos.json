@@ -5,7 +5,12 @@
         "descripcion": "Nike Air Max SYSTM",
         "precio": 144999.00,
         "categoria": "calzado",
-        "img":"https://sporting.vtexassets.com/arquivos/ids/1070920-1200-1200?v=638440400876670000&width=1200&height=1200&aspect=true"
+        "img":"https://sporting.vtexassets.com/arquivos/ids/1070920-1200-1200?v=638440400876670000&width=1200&height=1200&aspect=true",
+        "imagenes":[
+            "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb9196f29/products/NIDM9537-001/NIDM9537-001-2.JPG",
+            "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw1d6253ef/products/NIDM9537-001/NIDM9537-001-3.JPG",
+            "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwcff6f904/products/NIDM9537-001/NIDM9537-001-4.JPG"
+        ]
     },
     {
         "id": 2,
@@ -13,7 +18,12 @@
         "descripcion": "Zapatillas Yeezy Boost 350 V2 Adidas",
         "precio": 299999.00,
         "categoria": "calzado",
-        "img":"https://www.digitalsport.com.ar/files/products/64dce43cd9ab1-630998-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/64dce43cd9ab1-630998-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/64dce43e44006-630998-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/64dce43f862a7-630998-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/64dce440e50c8-630998-500x500.jpg"
+        ]
     },
     {
         "id": 3,
@@ -21,7 +31,12 @@
         "descripcion": "Zapatillas Elite Active Lacoste",
         "precio": 179899.00,
         "categoria": "calzado",
-        "img":"https://www.digitalsport.com.ar/files/products/66d5ee0fef0ba-668675-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66d5ee0fef0ba-668675-500x500.jpg",
+        "imagenes":[
+            "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwd8db7709/48SMA0050_7B3_02.jpg?imwidth=615&impolicy=pctp",
+            "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw128629a1/48SMA0050_7B3_03.jpg?imwidth=615&impolicy=pctp",
+            "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwa3c9d7f8/48SMA0050_7B3_05.jpg?imwidth=615&impolicy=pctp"
+        ]
     },
     {
         "id": 4,
@@ -29,7 +44,12 @@
         "descripcion": "Zapatillas Lineshot Lacoste",
         "precio": 154899.00,
         "categoria": "calzado",
-        "img":"https://www.digitalsport.com.ar/files/products/65e634dd4eb81-647088-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65e634dd4eb81-647088-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/65e634de5e737-647088-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65e634df92e36-647088-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65e634e0ad722-647088-500x500.jpg"
+        ]
     },
     {
         "id": 5,
@@ -37,7 +57,12 @@
         "descripcion": "Zapatillas Project Rock 6 Under Armour",
         "precio": 299999.00,
         "categoria": "calzado",
-        "img":"https://www.digitalsport.com.ar/files/products/66c5f0fc5c0c6-619712-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66c5f0fc5c0c6-619712-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66c5f0fd4f7b5-619712-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66c5f0fe2f069-619712-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66c5f0ff224cd-619712-500x500.jpg"
+        ]
     },
 
     {
@@ -46,7 +71,11 @@
         "descripcion": "Remera Puma X Pleasures Puma",
         "precio": 73599.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/66d0532adea10-625889-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66d0532adea10-625889-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66d0532bd93f8-625889-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66d0532adea10-625889-500x500.jpg"
+        ]
     },
     {
         "id": 7,
@@ -54,7 +83,11 @@
         "descripcion": "Remera Explore Fila",
         "precio": 21899.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/666cae942f97e-658630-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/666cae942f97e-658630-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/666cae9521ed8-658630-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/666cae9607295-658630-500x500.jpg"
+        ]
     },
     {
         "id": 8,
@@ -62,7 +95,11 @@
         "descripcion": "Buzo Pampa Eandi Revolver",
         "precio": 64999.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/661ffdd9d491c-648089-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/661ffdd9d491c-648089-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/661ffddac7b89-648089-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/661ffddba5e73-648089-500x500.jpg"
+        ]
     },
     {
         "id": 9,
@@ -70,7 +107,13 @@
         "descripcion": "Buzo Adventure Fabric Mix Adidas",
         "precio": 137999.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/65fb7771c2e2f-583404-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65fb7771c2e2f-583404-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/65fb77731442d-583404-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65fb777492518-583404-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65fb7776176f4-583404-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65fb77776982d-583404-500x500.jpg"
+        ]
     },
     {
         "id": 10,
@@ -78,7 +121,11 @@
         "descripcion": "Canguro Cocodrilo Lacoste",
         "precio": 199999.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/65ef9a9c95efb-647246-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65ef9a9c95efb-647246-500x500.jpg",
+        "imagenes":[
+            "https://digital-sport.com.ar/files/products/65ef9a9db253e-647246-500x500.jpg",
+            "https://digital-sport.com.ar/files/products/65ef9a9eb96ae-647246-500x500.jpg"            
+        ]
     },
 
     {
@@ -87,7 +134,12 @@
         "descripcion": "Pantalon Survetement Lacoste",
         "precio": 129899.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/65dc99b992518-647980-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65dc99b992518-647980-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/65dc99ba7b7e0-647980-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65dc99bb69202-647980-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65dc99bc5090f-647980-500x500.jpg"            
+        ]
     },
     {
         "id": 12,
@@ -95,7 +147,13 @@
         "descripcion": "Pantalon Escudo Playstation Bolivia",
         "precio": 79899.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/66db33d5ba10c-671789-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66db33d5ba10c-671789-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66db33d68d8b0-671789-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66db33d79b517-671789-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66db33d87aa90-671789-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66db33d203bdc-671789-500x500.jpg"            
+        ]
     },
     {
         "id": 13,
@@ -103,7 +161,12 @@
         "descripcion": "Bermuda Hoops Fila",
         "precio": 31899.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/65d090eaab58a-643301-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65d090eaab58a-643301-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/65d090ebb50e1-643301-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65d090ecc43a1-643301-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/65d090ede7c1b-643301-500x500.jpg"           
+        ]
     },
     {
         "id": 14,
@@ -111,7 +174,11 @@
         "descripcion": "Short Form Nike",
         "precio": 47999.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/66e1cc074bd38-622413-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66e1cc074bd38-622413-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66e1cc085c1e6-622413-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66e1cc094bbbe-622413-500x500.jpg"          
+        ]
     },
     {
         "id": 15,
@@ -119,7 +186,13 @@
         "descripcion": "Pantalon Tech Fleece Nike",
         "precio": 177499.00,
         "categoria": "indumentaria",
-        "img":"https://www.digitalsport.com.ar/files/products/661e5e40b4612-609319-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/661e5e40b4612-609319-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/661e5e41b5f41-609319-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/661e5e42ecf49-609319-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/661e5e4441e33-609319-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/661e5e456b870-609319-500x500.jpg"          
+        ]
     },
 
     {
@@ -128,7 +201,10 @@
         "descripcion": "Mochila Bl Medium Puma",
         "precio": 124999.00,
         "categoria": "accesorios",
-        "img":"https://www.digitalsport.com.ar/files/products/65b80fa2e1409-624715-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/65b80fa2e1409-624715-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/65b80fa4151a8-624715-500x500.jpg"
+        ]
     },
     {
         "id": 17,
@@ -136,7 +212,12 @@
         "descripcion": "Gorra 940 Nba New York Knicks New Era",
         "precio": 43700.00,
         "categoria": "accesorios",
-        "img":"https://www.digitalsport.com.ar/files/products/66a4d247b18b0-654543-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66a4d247b18b0-654543-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66a4d2497f8d2-654543-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66a4d24a6b97f-654543-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66a4d2489a109-654543-500x500.jpg"          
+        ]
     },
     {
         "id": 18,
@@ -144,7 +225,10 @@
         "descripcion": "Pack X 3 Medias Trefoil Cushion Adidas",
         "precio": 12999.00,
         "categoria": "accesorios",
-        "img":"https://www.digitalsport.com.ar/files/products/669e567034454-652484-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/669e567034454-652484-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/669e567034454-652484-500x500.jpg"          
+        ]
     },
     {
         "id": 19,
@@ -152,7 +236,12 @@
         "descripcion": "Gorra Oracle Red Bull Racing New Era",
         "precio": 51700.00,
         "categoria": "accesorios",
-        "img":"https://www.digitalsport.com.ar/files/products/66aad07b0da0b-654492-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66aad07b0da0b-654492-500x500.jpg",
+        "imagenes":[
+            "https://www.digitalsport.com.ar/files/products/66aad07bea92f-654492-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66aad07cd8efc-654492-500x500.jpg",
+            "https://www.digitalsport.com.ar/files/products/66aad07dce3c2-654492-500x500.jpg"          
+        ]
     },
     {
         "id": 20,
@@ -160,7 +249,12 @@
         "descripcion": "Botella Flip Straw 591Ml Stanley",
         "precio": 88000.00,
         "categoria": "accesorios",
-        "img":"https://www.digitalsport.com.ar/files/products/66b3a5ebae798-665515-500x500.jpg"
+        "img":"https://www.digitalsport.com.ar/files/products/66b3a5ebae798-665515-500x500.jpg",
+        "imagenes":[
+            "https://http2.mlstatic.com/D_NQ_NP_669665-MLA75753530673_042024-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_641702-MLA75753610309_042024-O.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_899869-MLA75753827617_042024-O.webp"          
+        ]
     }
 
     
