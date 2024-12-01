@@ -38,6 +38,28 @@
             height: 31px;
             width: 31px;
             border-radius: 20%;
+            transition: all 0.3s ease;
+        }
+        .btn-cart:hover{           
+            // transform: scale(1.1);  
+            animation: shake 0.5s linear forwards;           
+        }
+        @keyframes shake {
+            0%{
+                transform: translateX(0) scale(1);
+            }
+            25% {
+                transform: translateX(-2px) scale(1.02); 
+            }
+            50% {
+                transform: translateX(2px) scale(1.05);  
+            }
+            75% {
+                transform: translateX(-2px) scale(1.1); 
+            }
+            100%{
+                transform: translateX(-2px) scale(1.1);
+            }
         }               
     }
 
