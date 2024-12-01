@@ -7,7 +7,7 @@ export const cardComponent=(productos)=>{
                 <h3>${e.marca}</h3>
                 <div class="img-btn">
                     <img class="imgModal" src="${e.img}" alt="${e.marca}"></img>
-                    <button class="btn-cart"><i class="bi bi-cart3"></i></button> 
+                    <button class="btn-cart"><i class="bi bi-cart-plus"></i></button> 
                 </div>
 
                 <div class="desc">
@@ -25,3 +25,5 @@ export const cardComponent=(productos)=>{
     `;
 };
  
+
+/* <button class="btn-cart"><i class="bi bi-cart3"></i></button> */

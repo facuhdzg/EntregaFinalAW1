@@ -423,7 +423,9 @@
   left: 89%;
   height: 31px;
   width: 31px;
+  background-color: rgba(128, 128, 128, 0.342);
   border-radius: 20%;
+  border: none;
   transition: all 0.3s ease;
 }
 .card .img-btn .btn-cart:hover {
